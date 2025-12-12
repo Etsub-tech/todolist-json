@@ -1,0 +1,21 @@
+{
+  "name": "todolist-json",
+  "version": "1.0.0",
+  "description": "A To-Do application using JSON Server",
+  "main": "index.html",
+  "scripts": {
+    "start": "json-server --watch db.json --port 3000",
+    "dev": "json-server --watch db.json --port 3000"
+  },
+  "keywords": [
+    "todo",
+    "json-server",
+    "javascript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "json-server": "^0.17.4"
+  }
+}
+
