@@ -1,79 +1,101 @@
-# To-Do Application with JSON Server
+To-Do Application (JSON Server)
 
-A modern, feature-rich To-Do application that uses JSON Server as a backend API.
+This is a simple To-Do web application built using HTML, CSS, and JavaScript, with JSON Server used as a mock backend.
+The project was done to practice frontend development and working with REST APIs.
 
-## Features
+What the App Can Do
+Basic Features
 
-### Core Functionality
-- ✅ Add tasks with title, description, category, and due date
-- ✅ Display all tasks in a beautiful card-based layout
-- ✅ Mark tasks as completed/incomplete (updates JSON Server)
-- ✅ Edit existing tasks (updates JSON Server)
-- ✅ Delete tasks (removes from backend and UI)
+Add a task with:
 
-### Advanced Features
-- 🔍 **Search**: Real-time search through task titles and descriptions
-- 🏷️ **Category Filter**: Filter tasks by category (Work, Personal, Shopping, Health, Other)
-- 📊 **Sorting**: Sort by newest/oldest, due date, or title (A-Z/Z-A)
-- 🌙 **Dark Theme**: Toggle between light and dark modes (persists in localStorage)
+title
 
-## Getting Started
+description
 
-### Prerequisites
-- Node.js and npm installed on your system
+category
 
-### Installation
+due date
 
-1. Install dependencies:
-```bash
+View all tasks in a card layout
+
+Mark tasks as completed or incomplete
+
+Edit existing tasks
+
+Delete tasks
+
+Extra Features
+
+Search tasks by title or description
+
+Filter tasks by category (Work, Personal, Shopping, Health, Other)
+
+Sort tasks (newest, oldest, due date, title)
+
+Light and dark mode (saved in the browser)
+
+Tools Used
+
+HTML
+CSS
+JavaScript (Vanilla JS)
+JSON Server (for backend simulation)
+Node.js & npm
+
+How to Run the Project
+Requirements
+Node.js installed on your computer
+
+Steps
+Install the required dependency:
 npm install
-```
 
-2. Start JSON Server:
-```bash
+Start JSON Server:
 npm start
-```
 
-The JSON Server will run on `http://localhost:3000`
 
-3. Open `index.html` in your web browser
+This will run the backend at:
 
-## API Endpoints
+http://localhost:3000
 
-The application uses the following JSON Server endpoints:
 
-- `GET /todos` - Load all tasks
-- `POST /todos` - Create a new task
-- `PATCH /todos/:id` - Update a specific task
-- `DELETE /todos/:id` - Delete a specific task
+Open index.html in your browser to use the app.
 
-## Project Structure
+API Endpoints Used
 
-```
-todolist-json/
-├── index.html      # Main HTML file
-├── styles.css      # Styling and themes
-├── script.js       # Application logic and API calls
-├── db.json         # JSON Server database
-├── package.json    # Dependencies and scripts
-└── README.md       # This file
-```
+JSON Server automatically creates these endpoints from db.json:
 
-## Usage
+GET /todos – get all tasks
 
-1. **Add a Task**: Fill in the form with task details and click "Add Task"
-2. **Complete a Task**: Click the "Complete" button on any task card
-3. **Edit a Task**: Click the "Edit" button, modify the form, and click "Update Task"
-4. **Delete a Task**: Click the "Delete" button and confirm
-5. **Search**: Type in the search box to filter tasks
-6. **Filter by Category**: Select a category from the dropdown
-7. **Sort**: Choose a sorting option from the sort dropdown
-8. **Toggle Theme**: Click the moon/sun icon in the header
+POST /todos – add a new task
 
-## Notes
+PATCH /todos/:id – update a task
 
-- Make sure JSON Server is running before using the application
-- All data persists in `db.json`
-- Theme preference is saved in browser localStorage
-- The application is fully responsive and works on mobile devices
+DELETE /todos/:id – delete a task
 
+
+How to Use the App
+
+Fill the form and click Add Task to create a task
+
+Click Complete to mark a task as done
+
+Click Edit to modify a task
+
+Click Delete to remove a task
+
+Use the search box to find tasks
+
+Use the dropdowns to filter or sort tasks
+
+Click the moon/sun icon to switch themes
+
+Notes
+
+JSON Server must be running for the app to work properly
+
+All task data is stored in db.json
+
+Theme preference is saved using localStorage
+
+The app works on both desktop and mobile screens

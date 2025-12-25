@@ -1,12 +1,3 @@
 {
-  "todos": [
-    {
-      "id": "4fb5",
-      "title": "first",
-      "description": "first",
-      "category": "work",
-      "dueDate": "0003-03-31",
-      "completed": false
-    }
-  ]
+  "todos": []
 }
